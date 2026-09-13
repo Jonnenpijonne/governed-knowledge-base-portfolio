@@ -1,0 +1,5 @@
+work_item_id,status,priority,owner_role,billable
+DEMO-001,open,medium,analyst,false
+DEMO-002,in_progress,high,developer,true
+DEMO-003,closed,low,reviewer,false
+
