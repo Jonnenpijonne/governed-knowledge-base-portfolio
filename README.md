@@ -76,6 +76,8 @@ preserving traceability and auditability.
 
 ## Publication status
 
-Portfolio demo / not for production use. The repository should remain private initially
-and only be made public after a separate content, licensing and publication review.
-
+**Audited and ready for portfolio publication.** This is a demonstration project, not a
+production system or an authoritative operating model. The technical and content audit
+was completed on 2026-09-13; see [`AUDIT_2026-09-13.md`](AUDIT_2026-09-13.md) and
+[`PORTFOLIO_REVIEW.md`](PORTFOLIO_REVIEW.md). Repository visibility remains a separate
+owner decision.

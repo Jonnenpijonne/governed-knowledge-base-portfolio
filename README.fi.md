@@ -74,6 +74,8 @@ riittävän kevyt pienen organisaation arkeen ja samalla auditoitava.
 
 ## Julkaisutila
 
-Portfoliodemo / ei tuotantokäyttöön. Repo kannattaa pitää aluksi yksityisenä ja
-avata julkiseksi vasta erillisen sisältö-, lisenssi- ja julkaisukatselmuksen jälkeen.
-
+**Auditoitu ja valmis portfoliojulkaisuun.** Kyseessä on demonstraatio, ei
+tuotantojärjestelmä eikä auktoritatiivinen toimintamalli. Tekninen ja sisällöllinen
+auditointi valmistui 13.9.2026; katso [`AUDIT_2026-09-13.md`](AUDIT_2026-09-13.md) ja
+[`PORTFOLIO_REVIEW.md`](PORTFOLIO_REVIEW.md). Repon näkyvyyden muuttaminen on erillinen
+omistajan päätös.
