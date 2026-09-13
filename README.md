@@ -76,10 +76,9 @@ preserving traceability and auditability.
 
 ## Publication status
 
-**Audited and approved by the repository owner for public portfolio publication.** This
-is a demonstration project, not a production system or an authoritative operating model.
-The technical and content audit was completed on 2026-09-13; see
+**Published as an audited public portfolio repository.** This is a demonstration project,
+not a production system or an authoritative operating model. The technical and content
+audit and the repository owner's publication decision were completed on 2026-09-13; see
 [`AUDIT_2026-09-13.md`](AUDIT_2026-09-13.md) and
-[`PORTFOLIO_REVIEW.md`](PORTFOLIO_REVIEW.md). GitHub currently reports the repository
-as private, so changing and verifying repository visibility remains the final operational
-publication step. No employer or third-party approval is claimed.
+[`PORTFOLIO_REVIEW.md`](PORTFOLIO_REVIEW.md). Public visibility was verified through
+GitHub after publication. No employer or third-party approval is claimed.

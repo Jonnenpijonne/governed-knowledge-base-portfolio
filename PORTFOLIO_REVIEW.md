@@ -13,12 +13,11 @@ julkaisupäätöksen.
 - [x] MIT-lisenssi lisätty ja tekijänoikeus kirjattu Jonne Silvennoiselle
 - [x] Repon omistaja hyväksyi julkisen portfoliojulkaisun 2026-09-13
 - [x] Julkaisussa ei väitetä työnantajan tai muun kolmannen osapuolen hyväksyntää
-- [ ] GitHub-näkyvyys muutettu julkiseksi ja varmistettu APIsta
+- [x] GitHub-näkyvyys muutettu julkiseksi ja varmistettu APIsta
 
-Nykyinen sisältö läpäisee teknisen ja clean-room-julkaisukatselmuksen. GitHub ilmoittaa
-repon tällä hetkellä yksityiseksi, joten viimeinen avoin operatiivinen vaihe on näkyvyyden
-muuttaminen julkiseksi ja tilan uudelleenvarmistus.
+Nykyinen sisältö läpäisee teknisen ja clean-room-julkaisukatselmuksen. Repon omistaja
+hyväksyi julkaisun, näkyvyys muutettiin julkiseksi ja tila varmistettiin GitHubin APIsta.
 
 Tämä tarkistus ei ole oikeudellinen arvio eikä työnantajan julkaisulupa. Tarkistuksen
-tekniset todisteet, päätösrajat ja avoin näkyvyysvaihe on kirjattu tiedostoon
+tekniset todisteet, päätösrajat ja julkaisun varmennus on kirjattu tiedostoon
 `AUDIT_2026-09-13.md`.
