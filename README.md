@@ -1,77 +1,81 @@
-# Governed Knowledge Base — portfolio demo
+[English](README.md) | [Suomi](README.fi.md)
 
-Tämä on itsenäinen, synteettisellä aineistolla rakennettu portfoliohanke. Se näyttää,
-miten pieni organisaatio voi hallita dokumentoitua toimintamallia versionhallinnassa
-ilman asiakasdataa, henkilötietoja tai tuotantojärjestelmäkytkentöjä.
+# Governed Knowledge Base — Portfolio Demo
 
-> **Clean-room demo:** projekti ei ole asiakas- tai työnantajarepon kopio, forkki tai
-> julkaisu. Kaikki nimet, aineisto, tunnisteet ja esimerkit on luotu tätä demoa varten.
+This independently designed clean-room portfolio project demonstrates how a small
+organization can manage an operational model in version control without customer data,
+personal data or production-system integrations.
 
-## Mitä tämä osoittaa
+> **Clean-room demo:** This project is not a copy, fork or publication of a customer or
+> employer repository. All names, data, identifiers and examples were created solely for
+> this demonstration.
 
-- järjestelmien vastuurajojen ja Source of Truth -roolien määrittely
-- päätösten dokumentointi ADR-muodossa
-- AI:n käyttö analyysi- ja ehdotuskerroksena
-- turvallinen handover/runbook-rakenne
-- synteettisen testiaineiston käyttö
-- metadata-, rakenne- ja salaisuustarkistukset Pythonilla
-- automaattinen validointi GitHub Actionsissa
+## What this demonstrates
 
-## Arkkitehtuurin periaate
+- defining system boundaries and Source of Truth responsibilities
+- documenting architectural decisions as ADRs
+- using AI as an analysis and proposal layer
+- creating a safe handover and runbook structure
+- using synthetic test data
+- validating metadata, structure and secret patterns with Python
+- enforcing automated checks with GitHub Actions
+
+## Architecture principle
 
 ```mermaid
 flowchart TB
-    W["Työjono\noperatiivinen tila"]
-    D["Dokumenttivarasto\npysyvät dokumentit"]
-    G["Git-repo\nsäännöt ja päätökset"]
-    A["AI / hakukerros\nluku ja ehdotukset"]
+    W["Work queue\noperational state"]
+    D["Document store\npersistent documents"]
+    G["Git repository\nrules and decisions"]
+    A["AI / search layer\nread and propose"]
     W --> A
     D --> A
     G --> A
 ```
 
-Jokaisella tiedolla on yksi auktoritatiivinen koti. AI- tai hakukerros voi lukea
-hyväksyttyjä lähteitä, mutta se ei muutu niiden masteriksi.
+Each type of information has one authoritative home. An AI or search layer may read
+approved sources, but it does not become their master.
 
-## Rakenne
+## Repository structure
 
 ```text
 docs/
-  architecture/       järjestelmärajat ja ingressimalli
-  decisions/          ADR-päätökset
-  governance/         AI- ja muutoksenhallinnan säännöt
-  handover/           käyttö- ja palautusohje
-examples/synthetic/   täysin keksitty testiaineisto
-scripts/              validaattori
-tests/                regressiotestit
+  architecture/       system boundaries and ingress model
+  decisions/          architecture decision records
+  governance/         AI and change-management rules
+  handover/           operating and recovery instructions
+examples/synthetic/   fully fictional test data
+scripts/              validator
+tests/                regression tests
 ```
 
-## Kokeile paikallisesti
+## Run locally
 
-Vaatimus on Python 3.11 tai uudempi. Ulkoisia Python-riippuvuuksia ei tarvita.
+Python 3.11 or newer is required. The project has no external Python dependencies.
 
 ```bash
 python scripts/validate.py
 python -m unittest discover -s tests -p 'test_*.py'
 ```
 
-## Turvarajat
+## Safety boundaries
 
-- Ei todellisia henkilöitä, asiakkaita, tikettejä, domaineja tai sisäisiä URL-osoitteita.
-- Ei tunnuksia, tokeneita, salaisuuslinkkejä tai tuotannon konfiguraatiota.
-- `examples/synthetic/` sisältää vain selvästi merkittyä keksittyä dataa.
-- Integraatiot on kuvattu konseptitasolla; mitään ulkoista järjestelmää ei kutsuta.
-- AI ei hyväksy, julkaise eikä muuta auktoritatiivista tietoa.
+- No real people, customers, tickets, domains or internal URLs.
+- No credentials, tokens, secret-sharing links or production configuration.
+- `examples/synthetic/` contains only clearly identified fictional data.
+- Integrations are described at the conceptual level; no external system is called.
+- AI does not approve, publish or modify authoritative information.
 
-## Oma roolini tässä portfoliossa
+## My role in this portfolio project
 
-Suunnittelin demonstraation tiedonhallinnan ja AI-avusteisen työn hallintamalliksi:
-rajasin lähteiden vastuut, kuvasin päätöksenteon, rakensin tarkistettavan metadatamallin
-sekä toteutin validaattorin, testit ja CI-portin. Tavoitteena oli tehdä hallintamallista
-riittävän kevyt pienen organisaation arkeen ja samalla auditoitava.
+I designed this demonstration as a governance model for operational knowledge and
+AI-assisted work. I defined source responsibilities and decision boundaries, created a
+reviewable metadata model, and implemented the validator, regression tests and CI gate.
+The goal was to keep the model lightweight enough for a small organization while
+preserving traceability and auditability.
 
-## Julkaisutila
+## Publication status
 
-Portfolio demo / ei tuotantokäyttöön. Repo kannattaa pitää aluksi yksityisenä ja
-avata julkiseksi vasta erillisen sisältö- ja lisenssikatselmuksen jälkeen.
+Portfolio demo / not for production use. The repository should remain private initially
+and only be made public after a separate content, licensing and publication review.
 
