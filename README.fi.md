@@ -74,8 +74,11 @@ riittävän kevyt pienen organisaation arkeen ja samalla auditoitava.
 
 ## Julkaisutila
 
-**Auditoitu ja valmis portfoliojulkaisuun.** Kyseessä on demonstraatio, ei
-tuotantojärjestelmä eikä auktoritatiivinen toimintamalli. Tekninen ja sisällöllinen
-auditointi valmistui 13.9.2026; katso [`AUDIT_2026-09-13.md`](AUDIT_2026-09-13.md) ja
-[`PORTFOLIO_REVIEW.md`](PORTFOLIO_REVIEW.md). Repon näkyvyyden muuttaminen on erillinen
-omistajan päätös.
+**Auditoitu ja repon omistajan hyväksymä julkiseen portfoliojulkaisuun.** Kyseessä on
+demonstraatio, ei tuotantojärjestelmä eikä auktoritatiivinen toimintamalli. Tekninen ja
+sisällöllinen auditointi valmistui 13.9.2026; katso
+[`AUDIT_2026-09-13.md`](AUDIT_2026-09-13.md) ja
+[`PORTFOLIO_REVIEW.md`](PORTFOLIO_REVIEW.md). GitHub ilmoittaa repon tällä hetkellä
+yksityiseksi, joten näkyvyyden muuttaminen ja uudelleenvarmistus ovat viimeinen
+operatiivinen julkaisuvaihe. Työnantajan tai muun kolmannen osapuolen hyväksyntää ei
+väitetä saaduksi.
